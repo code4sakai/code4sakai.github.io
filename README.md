@@ -1,4 +1,4 @@
-# web
+# code4sakai.github.io
 
 web site of "Code for Sakai (unofficial)"
 
