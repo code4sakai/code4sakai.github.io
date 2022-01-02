@@ -1,0 +1,23 @@
+<h1 id="organizational-hierarchy">organizational-hierarchy</h1>
+<p>RDF description of organizational hierarchy of Sakai-city</p>
+<h2 id="ソース">ソース</h2>
+<ul>
+<li>組織図: https://www.city.fukui-sakai.lg.jp/somu/shisei/gaiyo/soshiki/documents/sosikizu20210401.pdf</li>
+<li>ネットワーク図の生成は神崎さんのツールを使わせてもらっています。 　https://www.kanzaki.com/works/2009/pub/graph-draw
+<ul>
+<li>全部のネットワーク graph-draw.png <img src="./graph-draw.png" alt="ネットワーク" /></li>
+</ul></li>
+</ul>
+<h2 id="作業と課題">作業と課題</h2>
+<ul>
+<li><a href="https://github.com/takechan2000/semantic-digital-agency">semantic-digital-agency</a>を参考に、坂井市の組織図を記述してみました。こちらの<a href="https://www.youtube.com/watch?v=lllX8TGA5ck">動画</a>も参考にしてます。</li>
+<li>人名はありません。</li>
+<li>()内のラベルはskos:prefLabelを二つつけているが、これで良いのか？</li>
+<li>市長から線が伸びていない「議会」等は「坂井市」のsubOrganizationなのか？現在は、org:reportsToをつけずにおいている。</li>
+<li>点線は何を表しているのか？</li>
+<li>いつのバージョンかが表現できていない。</li>
+</ul>
+<h2 id="想定する利用方法">想定する利用方法</h2>
+<ul>
+<li>バージョン情報を付与すればいつの時点でどんな組織体制かを振り返ることが出来る。市の<a href="https://www.city.fukui-sakai.lg.jp/shisei/keikaku/sogo-keikaku/index.html">総合計画</a>と照らし合わせて、適切な組織体制になっているかを確認するなど。</li>
+</ul>
