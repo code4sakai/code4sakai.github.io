@@ -2,8 +2,8 @@
 RDF description of organizational hierarchy of Sakai-city
 
 ## ソース
-- 組織図: https://www.city.fukui-sakai.lg.jp/somu/shisei/gaiyo/soshiki/documents/sosikizu20210401.pdf
-- ネットワーク図の生成は神崎さんのツールを使わせてもらっています。 　https://www.kanzaki.com/works/2009/pub/graph-draw
+- [組織図](https://www.city.fukui-sakai.lg.jp/somu/shisei/gaiyo/soshiki/documents/sosikizu20210401.pdf)
+- ネットワーク図の生成は[神崎さんのツール](https://www.kanzaki.com/works/2009/pub/graph-draw)を使わせてもらっています。 
   - 全部のネットワーク graph-draw.png
 
 ## 作業と課題
