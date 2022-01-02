@@ -1,0 +1,383 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix ski: <https://www.city.fukui-sakai.lg.jp/schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+ski:市長 a org:Post ;
+  skos:prefLabel "市長" ;
+  org:postIn ski:坂井市 ;
+  org:headOf ski:坂井市 .
+
+ski:副市長 a org:Post ; 
+  skos:prefLabel "副市長" ;
+  org:reportsTo ski:市長 ;
+  org:postIn ski:坂井市 .
+
+ski:会計管理者 a org:Post ; 
+  skos:prefLabel "会計管理者" ;
+  org:reportsTo ski:市長 ;
+  org:postIn ski:坂井市 .
+
+ski:坂井市 a org:Organization ;
+  skos:prefLabel "坂井市" .
+
+ski:総務部 a org:Organization ;
+  skos:prefLabel "総務部" ;
+  org:reportsTo ski:副市長 ;
+  org:subOrganizationOf ski:坂井市 .
+
+ski:総合政策部 a org:Organization ;
+  skos:prefLabel "総合政策部" ;
+  org:reportsTo ski:副市長 ;
+  org:subOrganizationOf ski:坂井市 .
+
+ski:財務部 a org:Organization ;
+  skos:prefLabel "財務部" ;
+  org:reportsTo ski:副市長 ;
+  org:subOrganizationOf ski:坂井市 .
+
+ski:健康福祉部 a org:Organization ;
+  skos:prefLabel "健康福祉部" ;
+  skos:prefLabel "福祉事務所" ;
+  org:reportsTo ski:副市長 ;
+  org:subOrganizationOf ski:坂井市 .
+
+ski:生活環境部 a org:Organization ;
+  skos:prefLabel "生活環境部" ;
+  org:reportsTo ski:副市長 ;
+  org:subOrganizationOf ski:坂井市 .
+
+ski:産業政策部 a org:Organization ;
+  skos:prefLabel "産業政策部" ;
+  org:reportsTo ski:副市長 ;
+  org:subOrganizationOf ski:坂井市 .
+
+ski:建設部 a org:Organization ;
+  skos:prefLabel "建設部" ;
+  org:reportsTo ski:副市長 ;
+  org:subOrganizationOf ski:坂井市 .
+
+ski:三国病院 a org:Organization ;
+  skos:prefLabel "三国病院" ;
+  org:reportsTo ski:副市長 ;
+  org:subOrganizationOf ski:坂井市 .
+
+ski:教育委員会 a org:Organization ;
+  skos:prefLabel "教育委員会" ;
+  org:reportsTo ski:市長 ;
+  org:subOrganizationOf ski:坂井市 .
+
+ski:総務課 a org:Organization ;
+  skos:prefLabel "総務課" ;
+  org:reportsTo ski:総務部 ;
+  org:subOrganizationOf ski:総務部 .
+
+ski:安全対策課 a org:Organization ;
+  skos:prefLabel "安全対策課" ;
+  org:reportsTo ski:総務部 ;
+  org:subOrganizationOf ski:総務部 .
+
+ski:職員課 a org:Organization ;
+  skos:prefLabel "職員課" ;
+  org:reportsTo ski:総務部 ;
+  org:subOrganizationOf ski:総務部 .
+
+ski:秘書広報課 a org:Organization ;
+  skos:prefLabel "秘書広報課" ;
+  org:reportsTo ski:総務部 ;
+  org:subOrganizationOf ski:総務部 .
+
+ski:男女共同参画推進室 a org:Organization ;
+  skos:prefLabel "男女共同参画推進室" ;
+  org:reportsTo ski:総務課 ;
+  org:subOrganizationOf ski:総務課 .
+
+ski:企画政策課 a org:Organization ;
+  skos:prefLabel "企画政策課" ;
+  org:reportsTo ski:総合政策部 ;
+  org:subOrganizationOf ski:総合政策部 .
+
+ski:情報統計課 a org:Organization ;
+  skos:prefLabel "情報統計課" ;
+  org:reportsTo ski:総合政策部 ;
+  org:subOrganizationOf ski:総合政策部 .
+
+ski:公共交通対策課 a org:Organization ;
+  skos:prefLabel "公共交通対策課" ;
+  org:reportsTo ski:総合政策部 ;
+  org:subOrganizationOf ski:総合政策部 .
+
+ski:まちづくり推進課 a org:Organization ;
+  skos:prefLabel "まちづくり推進課" ;
+  org:reportsTo ski:総合政策部 ;
+  org:subOrganizationOf ski:総合政策部 .
+
+ski:財政課 a org:Organization ;
+  skos:prefLabel "財政課" ;
+  org:reportsTo ski:財政部 ;
+  org:subOrganizationOf ski:財政部 .
+
+ski:監理課 a org:Organization ;
+  skos:prefLabel "監理課" ;
+  org:reportsTo ski:財政部 ;
+  org:subOrganizationOf ski:財政部 .
+
+ski:営繕課 a org:Organization ;
+  skos:prefLabel "営繕課" ;
+  org:reportsTo ski:財政部 ;
+  org:subOrganizationOf ski:財政部 .
+
+ski:工事検査課 a org:Organization ;
+  skos:prefLabel "工事検査課" ;
+  org:reportsTo ski:財政部 ;
+  org:subOrganizationOf ski:財政部 .
+
+ski:課税課 a org:Organization ;
+  skos:prefLabel "課税課" ;
+  org:reportsTo ski:財政部 ;
+  org:subOrganizationOf ski:財政部 .
+
+ski:納税課 a org:Organization ;
+  skos:prefLabel "納税課" ;
+  org:reportsTo ski:財政部 ;
+  org:subOrganizationOf ski:財政部 .
+
+ski:福祉総務課 a org:Organization ;
+  skos:prefLabel "福祉総務課" ;
+  org:reportsTo ski:健康福祉部 ;
+  org:subOrganizationOf ski:健康福祉部 .
+
+ski:社会福祉課 a org:Organization ;
+  skos:prefLabel "社会福祉課" ;
+  org:reportsTo ski:健康福祉部 ;
+  org:subOrganizationOf ski:健康福祉部 .
+
+ski:高齢福祉課 a org:Organization ;
+  skos:prefLabel "高齢福祉課" ;
+  org:reportsTo ski:健康福祉部 ;
+  org:subOrganizationOf ski:健康福祉部 .
+
+ski:健康増進課 a org:Organization ;
+  skos:prefLabel "健康増進課" ;
+  org:reportsTo ski:健康福祉部 ;
+  org:subOrganizationOf ski:健康福祉部 .
+
+ski:子ども福祉課 a org:Organization ;
+  skos:prefLabel "子ども福祉課" ;
+  org:reportsTo ski:健康福祉部 ;
+  org:subOrganizationOf ski:健康福祉部 .
+
+ski:保育課 a org:Organization ;
+  skos:prefLabel "保育課" ;
+  org:reportsTo ski:健康福祉部 ;
+  org:subOrganizationOf ski:健康福祉部 .
+
+ski:福祉総合相談室 a org:Organization ;
+  skos:prefLabel "福祉総合相談室" ;
+  org:reportsTo ski:福祉総務課 ;
+  org:subOrganizationOf ski:福祉総務課 .
+
+ski:新型コロナワクチン接種対策室 a org:Organization ;
+  skos:prefLabel "新型コロナワクチン接種対策室" ;
+  org:reportsTo ski:健康増進課 ;
+  org:subOrganizationOf ski:健康増進課 .
+
+ski:市民生活課 a org:Organization ;
+  skos:prefLabel "市民生活課" ;
+  org:reportsTo ski:生活環境部 ;
+  org:subOrganizationOf ski:生活環境部 .
+
+ski:保険年金課 a org:Organization ;
+  skos:prefLabel "保険年金課" ;
+  org:reportsTo ski:生活環境部 ;
+  org:subOrganizationOf ski:生活環境部 .
+
+ski:環境推進課 a org:Organization ;
+  skos:prefLabel "環境推進課" ;
+  org:reportsTo ski:生活環境部 ;
+  org:subOrganizationOf ski:生活環境部 .
+
+ski:三国支所 a org:Organization ;
+  skos:prefLabel "三国支所" ;
+  org:reportsTo ski:生活環境部 ;
+  org:subOrganizationOf ski:生活環境部 .
+
+ski:丸岡支所 a org:Organization ;
+  skos:prefLabel "丸岡支所" ;
+  org:reportsTo ski:生活環境部 ;
+  org:subOrganizationOf ski:生活環境部 .
+
+ski:春江支所 a org:Organization ;
+  skos:prefLabel "春江支所" ;
+  org:reportsTo ski:生活環境部 ;
+  org:subOrganizationOf ski:生活環境部 .
+
+ski:農業振興課 a org:Organization ;
+  skos:prefLabel "農業振興課" ;
+  org:reportsTo ski:産業政策部 ;
+  org:subOrganizationOf ski:産業政策部 .
+
+ski:農業振興課 a org:Organization ;
+  skos:prefLabel "農業振興課" ;
+  org:reportsTo ski:産業政策部 ;
+  org:subOrganizationOf ski:産業政策部 .
+
+ski:林業水産振興課 a org:Organization ;
+  skos:prefLabel "林業水産振興課" ;
+  org:reportsTo ski:産業政策部 ;
+  org:subOrganizationOf ski:産業政策部 .
+
+ski:観光交流課 a org:Organization ;
+  skos:prefLabel "観光交流課" ;
+  org:reportsTo ski:産業政策部 ;
+  org:subOrganizationOf ski:産業政策部 .
+
+ski:商工労政課 a org:Organization ;
+  skos:prefLabel "商工労政課" ;
+  org:reportsTo ski:産業政策部 ;
+  org:subOrganizationOf ski:産業政策部 .
+
+ski:地籍調査室 a org:Organization ;
+  skos:prefLabel "地籍調査室" ;
+  org:reportsTo ski:農業振興課 ;
+  org:subOrganizationOf ski:農業振興課 .
+
+ski:都市計画課 a org:Organization ;
+  skos:prefLabel "都市計画課" ;
+  org:reportsTo ski:建設部 ;
+  org:subOrganizationOf ski:建設部 .
+
+ski:建設課 a org:Organization ;
+  skos:prefLabel "建設課" ;
+  org:reportsTo ski:建設部 ;
+  org:subOrganizationOf ski:建設部 .
+
+ski:上下水道課 a org:Organization ;
+  skos:prefLabel "上下水道課" ;
+  org:reportsTo ski:建設部 ;
+  org:subOrganizationOf ski:建設部 .
+
+ski:高速交通対策室 a org:Organization ;
+  skos:prefLabel "高速交通対策室" ;
+  org:reportsTo ski:建設課 ;
+  org:subOrganizationOf ski:建設課 .
+
+ski:診療部 a org:Organization ;
+  skos:prefLabel "診療部" ;
+  org:reportsTo ski:三国病院 ;
+  org:subOrganizationOf ski:三国病院 .
+
+ski:看護部 a org:Organization ;
+  skos:prefLabel "看護部" ;
+  org:reportsTo ski:三国病院 ;
+  org:subOrganizationOf ski:三国病院 .
+
+ski:診療技術部 a org:Organization ;
+  skos:prefLabel "診療技術部" ;
+  org:reportsTo ski:三国病院 ;
+  org:subOrganizationOf ski:三国病院 .
+
+ski:事務局 a org:Organization ;
+  skos:prefLabel "事務局" ;
+  org:reportsTo ski:三国病院 ;
+  org:subOrganizationOf ski:三国病院 .
+
+ski:会計課 a org:Organization ;
+  skos:prefLabel "会計課" ;
+  org:reportsTo ski:会計管理者 ;
+  org:subOrganizationOf ski:坂井市 .
+
+ski:事務局2 a org:Organization ;
+  skos:prefLabel "事務局" ;
+  org:reportsTo ski:教育委員会 ;
+  org:subOrganizationOf ski:教育委員会 .
+
+ski:教育総務課 a org:Organization ;
+  skos:prefLabel "教育総務課" ;
+  org:reportsTo ski:事務局2 ;
+  org:subOrganizationOf ski:事務局2 .
+
+ski:学校教育課 a org:Organization ;
+  skos:prefLabel "学校教育課" ;
+  org:reportsTo ski:事務局2 ;
+  org:subOrganizationOf ski:事務局2 .
+
+ski:生涯学習スポーツ課 a org:Organization ;
+  skos:prefLabel "生涯学習スポーツ課" ;
+  org:reportsTo ski:事務局2 ;
+  org:subOrganizationOf ski:事務局2 .
+
+ski:文化課 a org:Organization ;
+  skos:prefLabel "文化課" ;
+  org:reportsTo ski:事務局2 ;
+  org:subOrganizationOf ski:事務局2 .
+
+ski:図書館 a org:Organization ;
+  skos:prefLabel "図書館" ;
+  org:reportsTo ski:事務局2 ;
+  org:subOrganizationOf ski:事務局2 .
+
+ski:丸岡城国宝化推進室 a org:Organization ;
+  skos:prefLabel "丸岡城国宝化推進室" ;
+  org:reportsTo ski:文化課 ;
+  org:subOrganizationOf ski:文化課 .
+
+ski:議会 a org:Organization ;
+  skos:prefLabel "議会" ;
+  org:subOrganizationOf ski:坂井市 .
+
+ski:選挙管理委員会 a org:Organization ;
+  skos:prefLabel "選挙管理委員会" ;
+  org:subOrganizationOf ski:坂井市 .
+
+ski:監査委員会 a org:Organization ;
+  skos:prefLabel "監査委員会" ;
+  org:subOrganizationOf ski:坂井市 .
+
+ski:農業委員会 a org:Organization ;
+  skos:prefLabel "農業委員会" ;
+  org:subOrganizationOf ski:坂井市 .
+
+ski:公平委員会 a org:Organization ;
+  skos:prefLabel "公平委員会" ;
+  org:subOrganizationOf ski:坂井市 .
+
+ski:固定資産評価審査委員会 a org:Organization ;
+  skos:prefLabel "固定資産評価審査委員会" ;
+  org:subOrganizationOf ski:坂井市 .
+
+ski:事務局3 a org:Organization ;
+  skos:prefLabel "事務局" ;
+  org:reportsTo ski:議会 ;
+  org:subOrganizationOf ski:議会 .
+
+ski:事務局4 a org:Organization ;
+  skos:prefLabel "事務局" ;
+  org:reportsTo ski:選挙管理委員会 ;
+  org:subOrganizationOf ski:選挙管理委員会 .
+
+ski:事務局5 a org:Organization ;
+  skos:prefLabel "事務局" ;
+  org:reportsTo ski:監査委員会 ;
+  org:subOrganizationOf ski:監査委員会 .
+
+ski:事務局6 a org:Organization ;
+  skos:prefLabel "事務局" ;
+  org:reportsTo ski:農業委員会 ;
+  org:subOrganizationOf ski:農業委員会 . 
+
+ski:事務局7 a org:Organization ;
+  skos:prefLabel "事務局" ;
+  org:reportsTo ski:公平委員会 ;
+  org:subOrganizationOf ski:公平委員会 .
+
+ski:事務局8 a org:Organization ;
+  skos:prefLabel "事務局" ;
+  org:reportsTo ski:固定資産評価審査委員会 ;
+  org:subOrganizationOf ski:固定資産評価審査委員会 .
+
+# 坂本憲男 市長
+wd:Q107966037 org:holds ski:市長 .
